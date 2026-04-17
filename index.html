@@ -1,0 +1,2446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Care Option Residential Treatment Center | Houston, TX | Boys Ages 8-15</title>
+<meta name="description" content="Care Option RTC provides a warm, home-like environment for boys ages 8-15 in Houston, TX. School continuity, medication administration, and 15+ years of healthcare leadership. Call (281) 809-3653.">
+<meta property="og:title" content="Care Option Residential Treatment Center | Houston, TX">
+<meta property="og:description" content="A safe, nurturing home for boys ages 8-15. School stays on track. Childhood, preserved. Led by 15+ years of healthcare experience.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://careoptionrtc.com">
+<meta property="og:image" content="https://careoptionrtc.com/og-image.jpg">
+<link rel="canonical" href="https://careoptionrtc.com">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+<!-- Animations via CSS + Intersection Observer — no external JS needed -->
+
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["MedicalOrganization", "LocalBusiness"],
+  "name": "Care Option Residential Treatment Center",
+  "description": "Residential treatment center for boys ages 8-15 providing a warm, home-like environment with school continuity and medication administration in Houston, TX.",
+  "url": "https://careoptionrtc.com",
+  "telephone": "+12818093653",
+  "email": "careoptionrtc@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Houston",
+    "addressRegion": "TX",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "10:00",
+      "closes": "17:00"
+    }
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Margaret Nwajiaku",
+    "jobTitle": "Founder & Director"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Houston",
+    "containedInPlace": {
+      "@type": "State",
+      "name": "Texas"
+    }
+  },
+  "medicalSpecialty": "Pediatric residential care",
+  "hasCredential": "Licensed in Texas"
+}
+</script>
+
+<style>
+  /* ===========================
+     DESIGN TOKENS
+  =========================== */
+  :root {
+    /* Care Option A — Deep Harbor palette */
+    --primary: #1A5276;
+    --primary-dark: #0E3450;
+    --primary-deep: #092840;
+    --secondary: #0E2233;
+    --accent-warm: #F59E0B;
+    --accent-soft: #F0EDE6;
+    --bg: #FAFAF7;
+    --surface: #F0EDE6;
+    --text-dark: #0E2233;
+    --text-body: #4A5E6B;
+    --text-light: #7A8E9B;
+    --divider: #D8E0E8;
+    --shadow-sm: 0 2px 8px rgba(14,34,51,0.08);
+    --shadow-md: 0 8px 24px rgba(14,34,51,0.12);
+    --shadow-lg: 0 20px 60px rgba(14,34,51,0.15);
+    --radius-sm: 12px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-xl: 32px;
+    --radius-pill: 999px;
+    --font-heading: 'Plus Jakarta Sans', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+    --font-accent: 'Lora', serif;
+    --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* ===========================
+     RESET & BASE
+  =========================== */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+  body {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    background: var(--bg);
+    overflow-x: hidden;
+    line-height: 1.6;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+  button { cursor: pointer; border: none; background: none; font-family: inherit; }
+  ul { list-style: none; }
+
+  /* ===========================
+     TYPOGRAPHY
+  =========================== */
+  h1, h2, h3, h4, h5 {
+    font-family: var(--font-heading);
+    color: var(--text-dark);
+    line-height: 1.15;
+    font-weight: 800;
+  }
+  h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+  h2 { font-size: clamp(1.6rem, 3.5vw, 2.6rem); }
+  h3 { font-size: clamp(1.1rem, 2vw, 1.4rem); font-weight: 700; }
+  h4 { font-size: 1.1rem; font-weight: 700; }
+  p { font-size: 1.0625rem; line-height: 1.75; }
+  .overline {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--primary-dark);
+  }
+
+  /* ===========================
+     UTILITIES
+  =========================== */
+  .container { width: 100%; max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+  .section-pad { padding: 96px 0; }
+  .section-pad-sm { padding: 64px 0; }
+  .text-center { text-align: center; }
+  .reveal { opacity: 1; }
+
+  /* Blob backgrounds */
+  .blob {
+    position: absolute;
+    border-radius: 50%;
+    background: var(--primary);
+    opacity: 0.07;
+    filter: blur(60px);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ===========================
+     WAVE DIVIDERS
+  =========================== */
+  .wave-divider {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  .wave-divider svg { display: block; width: 100%; }
+
+  /* ===========================
+     BUTTONS
+  =========================== */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 28px;
+    border-radius: var(--radius-pill);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1rem;
+    transition: var(--transition);
+    white-space: nowrap;
+  }
+  .btn-primary {
+    background: var(--primary);
+    color: #fff;
+    box-shadow: 0 4px 20px rgba(26,82,118,0.35);
+  }
+  .btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(26,82,118,0.4);
+  }
+  .btn-outline {
+    background: transparent;
+    color: var(--secondary);
+    border: 2px solid var(--divider);
+  }
+  .btn-outline:hover {
+    border-color: var(--primary);
+    color: var(--primary-dark);
+    transform: translateY(-2px);
+  }
+  .btn-white {
+    background: #fff;
+    color: var(--secondary);
+    box-shadow: var(--shadow-md);
+  }
+  .btn-white:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+  }
+  .btn-ghost-white {
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    border: 2px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(8px);
+  }
+  .btn-ghost-white:hover {
+    background: rgba(255,255,255,0.25);
+    transform: translateY(-2px);
+  }
+
+  /* ===========================
+     NAVIGATION
+  =========================== */
+  #navbar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    padding: 16px 0;
+    transition: var(--transition);
+  }
+  #navbar.scrolled {
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(16px);
+    box-shadow: var(--shadow-sm);
+    padding: 10px 0;
+  }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+  .nav-logo {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: var(--secondary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+  .nav-logo-mark {
+    width: 38px; height: 38px;
+    background: var(--primary);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 900;
+    flex-shrink: 0;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  .nav-links a {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    color: var(--text-dark);
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--primary-dark); }
+  .nav-phone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--secondary);
+    background: var(--accent-soft);
+    padding: 8px 16px;
+    border-radius: var(--radius-pill);
+    transition: var(--transition);
+  }
+  .nav-phone:hover { background: var(--primary); color: #fff; }
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: 4px;
+    cursor: pointer;
+  }
+  .hamburger span {
+    display: block;
+    width: 24px; height: 2px;
+    background: var(--text-dark);
+    border-radius: 2px;
+    transition: var(--transition);
+  }
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: #fff;
+    z-index: 999;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    transform: translateX(100%);
+    transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
+  }
+  .mobile-menu.open { transform: translateX(0); }
+  .mobile-menu a {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    transition: color 0.2s;
+  }
+  .mobile-menu a:hover { color: var(--primary); }
+  .mobile-close {
+    position: absolute;
+    top: 24px; right: 24px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--text-dark);
+  }
+
+  /* ===========================
+     HERO
+  =========================== */
+  #hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 0 80px;
+    overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg, #F5F3FA 0%, #F0EDE6 40%, #FAFAF7 100%);
+    z-index: 0;
+  }
+  .hero-blob-1 { width: 500px; height: 500px; top: -100px; right: -100px; }
+  .hero-blob-2 { width: 300px; height: 300px; bottom: 50px; left: -80px; background: var(--accent-warm); opacity: 0.05; }
+  .hero-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent-soft);
+    color: var(--primary-deep);
+    padding: 6px 14px;
+    border-radius: var(--radius-pill);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border: 1px solid rgba(26,82,118,0.2);
+  }
+  .hero-badge .dot {
+    width: 8px; height: 8px;
+    background: var(--primary);
+    border-radius: 50%;
+    animation: pulse-dot 2s infinite;
+  }
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(0.8); }
+  }
+  #hero h1 {
+    color: var(--secondary);
+    margin-bottom: 20px;
+  }
+  #hero h1 em {
+    font-style: normal;
+    color: var(--primary-dark);
+    position: relative;
+  }
+  .hero-sub {
+    font-size: 1.125rem;
+    color: var(--text-body);
+    max-width: 520px;
+    margin-bottom: 36px;
+    line-height: 1.8;
+  }
+  .hero-ctas {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .hero-visual {
+    position: relative;
+  }
+  .hero-card-main {
+    background: #fff;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    aspect-ratio: 4/3;
+    position: relative;
+  }
+  .hero-card-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+  }
+  .hero-illustration {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(145deg, #F0EDE6 0%, #D8E0E8 50%, #B8C8D8 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* SVG scene for hero */
+  .hero-scene-svg { width: 85%; max-width: 340px; }
+
+  .trust-badges {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+  }
+  .trust-badge {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background: #fff;
+    border: 1px solid var(--divider);
+    padding: 8px 14px;
+    border-radius: var(--radius-pill);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    box-shadow: var(--shadow-sm);
+  }
+  .trust-badge-icon { color: var(--primary); flex-shrink: 0; }
+
+  /* Floating stat cards */
+  .stat-card {
+    position: absolute;
+    background: #fff;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .stat-card-1 { bottom: 28px; left: -32px; }
+  .stat-card-2 { top: 28px; right: -32px; }
+  .stat-icon {
+    width: 40px; height: 40px;
+    border-radius: 10px;
+    background: var(--accent-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-dark);
+    flex-shrink: 0;
+  }
+  .stat-label { font-size: 0.75rem; color: var(--text-light); font-weight: 600; }
+  .stat-value { font-family: var(--font-heading); font-size: 1.1rem; font-weight: 800; color: var(--text-dark); }
+
+  /* ===========================
+     PILLARS
+  =========================== */
+  #pillars { background: var(--bg); }
+  .pillars-intro { max-width: 640px; margin: 0 auto 56px; }
+  .pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .pillar-card {
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    padding: 36px 28px;
+    border: 1px solid rgba(178,223,219,0.5);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+  }
+  .pillar-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+    border-radius: 4px 4px 0 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+  }
+  .pillar-card:hover::before { transform: scaleX(1); }
+  .pillar-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+    background: #fff;
+  }
+  .pillar-icon {
+    width: 56px; height: 56px;
+    background: var(--accent-soft);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-dark);
+    margin-bottom: 20px;
+  }
+  .pillar-card h3 { margin-bottom: 10px; font-size: 1.2rem; }
+  .pillar-card p { font-size: 0.9375rem; }
+
+  /* ===========================
+     WHY CARE OPTION
+  =========================== */
+  #why {
+    background: var(--secondary);
+    position: relative;
+    overflow: hidden;
+  }
+  .why-blob { background: rgba(26,82,118,0.12); }
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .why-left .overline { color: var(--primary); }
+  .why-left h2 { color: #fff; margin-bottom: 16px; }
+  .why-left p { color: rgba(255,255,255,0.75); margin-bottom: 32px; }
+  .trust-points { display: flex; flex-direction: column; gap: 20px; }
+  .trust-point {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .trust-point-icon {
+    width: 48px; height: 48px;
+    background: rgba(26,82,118,0.15);
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    flex-shrink: 0;
+    border: 1px solid rgba(26,82,118,0.2);
+  }
+  .trust-point h4 { color: #fff; margin-bottom: 4px; }
+  .trust-point p { font-size: 0.9rem; color: rgba(255,255,255,0.65); }
+
+  /* Stats in why section */
+  .why-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .why-stat {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: var(--radius-md);
+    padding: 24px 20px;
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+  }
+  .why-stat:hover {
+    background: rgba(255,255,255,0.1);
+    transform: translateY(-3px);
+  }
+  .why-stat-num {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: var(--primary);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .why-stat-label { font-size: 0.875rem; color: rgba(255,255,255,0.7); font-weight: 600; }
+  .why-stat-icon { color: rgba(26,82,118,0.4); margin-bottom: 12px; }
+
+  /* ===========================
+     NORMALCY APPROACH
+  =========================== */
+  #approach { background: var(--surface); }
+  .approach-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .approach-quote {
+    font-family: var(--font-accent);
+    font-size: clamp(1.25rem, 2.5vw, 1.6rem);
+    font-style: italic;
+    color: var(--secondary);
+    line-height: 1.6;
+    margin: 24px 0;
+    padding-left: 20px;
+    border-left: 3px solid var(--primary);
+  }
+  .approach-visual {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .approach-tile {
+    border-radius: var(--radius-md);
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .approach-tile:first-child {
+    background: var(--primary);
+    color: #fff;
+    grid-row: span 2;
+    justify-content: flex-end;
+  }
+  .approach-tile:nth-child(2) { background: #fff; box-shadow: var(--shadow-sm); }
+  .approach-tile:nth-child(3) { background: var(--accent-warm); }
+  .approach-tile:nth-child(4) { background: var(--secondary); color: #fff; }
+  .approach-tile h4 { font-size: 1rem; font-weight: 800; }
+  .approach-tile p { font-size: 0.85rem; opacity: 0.85; }
+  .approach-tile .tile-icon { font-size: 1.75rem; }
+  .approach-stats-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 40px;
+  }
+  .approach-stat {
+    text-align: center;
+    padding: 20px 12px;
+    background: #fff;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--divider);
+  }
+  .approach-stat-num {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--primary-dark);
+    display: block;
+    margin-bottom: 4px;
+  }
+  .approach-stat-label { font-size: 0.8rem; color: var(--text-body); font-weight: 600; }
+
+  /* ===========================
+     ABOUT / MARGARET
+  =========================== */
+  #about { background: var(--bg); }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 72px;
+    align-items: start;
+  }
+  .about-photo-wrap {
+    position: sticky;
+    top: 100px;
+  }
+  .about-photo {
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    aspect-ratio: 3/4;
+    background: linear-gradient(145deg, #F0EDE6, #D8E0E8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .about-photo-badge {
+    position: absolute;
+    bottom: 20px; left: 20px; right: 20px;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(12px);
+    border-radius: var(--radius-md);
+    padding: 16px 20px;
+    box-shadow: var(--shadow-md);
+  }
+  .about-photo-badge-name {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--text-dark);
+  }
+  .about-photo-badge-title { font-size: 0.8125rem; color: var(--text-body); margin-top: 2px; }
+  .about-photo-badge-cred {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+  }
+  .about-content .overline { margin-bottom: 12px; display: block; }
+  .about-content h2 { margin-bottom: 8px; }
+  .about-content .about-subtitle {
+    font-size: 1.125rem;
+    color: var(--primary-dark);
+    font-weight: 600;
+    margin-bottom: 24px;
+    font-family: var(--font-accent);
+    font-style: italic;
+  }
+  .about-story { margin-bottom: 32px; }
+  .about-story p { margin-bottom: 16px; }
+  .mv-block {
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    margin-bottom: 28px;
+    border: 1px solid var(--divider);
+  }
+  .mv-block h4 {
+    color: var(--secondary);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .mv-block h4 span { color: var(--primary); }
+  .values-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 24px;
+  }
+  .value-chip {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--accent-soft);
+    padding: 12px 16px;
+    border-radius: var(--radius-sm);
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--secondary);
+    border: 1px solid rgba(26,82,118,0.2);
+  }
+  .value-chip-icon { color: var(--primary); }
+
+  /* ===========================
+     SERVICES / DAILY LIFE
+  =========================== */
+  #services { background: var(--surface); }
+  .timeline {
+    max-width: 760px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 28px; top: 0; bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--primary), var(--divider));
+  }
+  .timeline-item {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 32px;
+    align-items: flex-start;
+  }
+  .timeline-dot {
+    width: 56px; height: 56px;
+    background: #fff;
+    border: 3px solid var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-dark);
+    flex-shrink: 0;
+    box-shadow: 0 0 0 6px var(--accent-soft);
+    position: relative;
+    z-index: 1;
+  }
+  .timeline-content {
+    background: #fff;
+    border-radius: var(--radius-md);
+    padding: 24px 28px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--divider);
+    flex: 1;
+    transition: var(--transition);
+  }
+  .timeline-content:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateX(4px);
+  }
+  .timeline-time {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 6px;
+  }
+  .timeline-content h4 { margin-bottom: 8px; }
+  .timeline-content p { font-size: 0.9375rem; }
+
+  /* ===========================
+     ADMISSION PROCESS
+  =========================== */
+  #admission { background: var(--bg); }
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    position: relative;
+  }
+  .steps-grid::before {
+    content: '';
+    position: absolute;
+    top: 28px; left: 14%;
+    width: 72%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary), var(--divider));
+  }
+  .step-card {
+    text-align: center;
+    padding: 32px 20px 28px;
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--divider);
+    transition: var(--transition);
+    position: relative;
+  }
+  .step-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+    background: #fff;
+  }
+  .step-num {
+    width: 56px; height: 56px;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 900;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 16px rgba(26,82,118,0.35);
+  }
+  .step-card h4 { margin-bottom: 10px; color: var(--secondary); }
+  .step-card p { font-size: 0.9rem; }
+
+  /* ===========================
+     TEAM
+  =========================== */
+  #team { background: var(--surface); }
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+  .team-card {
+    background: #fff;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--divider);
+    transition: var(--transition);
+  }
+  .team-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+  }
+  .team-photo {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .team-photo-margaret {
+    background: linear-gradient(145deg, #0E2233 0%, #092840 60%, #0E3450 100%);
+  }
+  .team-photo-placeholder {
+    background: linear-gradient(145deg, var(--surface) 0%, var(--divider) 100%);
+  }
+  .team-photo svg { opacity: 0.4; }
+  .team-photo-margaret svg { opacity: 0.25; color: #fff; }
+  .team-photo-margaret .margaret-initials {
+    position: absolute;
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 900;
+    color: rgba(255,255,255,0.8);
+    letter-spacing: -2px;
+  }
+  .team-info { padding: 20px; }
+  .team-info h4 { font-size: 1rem; margin-bottom: 2px; }
+  .team-role {
+    font-size: 0.8125rem;
+    color: var(--primary-dark);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .team-info p { font-size: 0.85rem; }
+  .team-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: var(--accent-soft);
+    color: var(--primary-deep);
+    padding: 3px 10px;
+    border-radius: var(--radius-pill);
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+
+  /* ===========================
+     TESTIMONIALS
+  =========================== */
+  #testimonials { background: var(--bg); }
+  .testimonials-grid {
+    display: flex;
+    gap: 28px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding-bottom: 16px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .testimonials-grid::-webkit-scrollbar { height: 6px; }
+  .testimonials-grid::-webkit-scrollbar-track { background: var(--divider); border-radius: 3px; }
+  .testimonials-grid::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 3px; }
+  .testimonial-dots { display:flex; justify-content:center; gap:8px; margin-top:20px; }
+  .testimonial-dot { width:10px; height:10px; border-radius:50%; background:var(--divider); border:none; cursor:pointer; transition:all 0.3s; }
+  .testimonial-dot.active { background:var(--primary); width:28px; border-radius:5px; }
+  .testimonial-card {
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    padding: 36px 32px;
+    border: 1px solid var(--divider);
+    position: relative;
+    transition: var(--transition);
+    min-width: 400px;
+    max-width: 440px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .testimonial-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+  }
+  .quote-mark {
+    font-family: var(--font-accent);
+    font-size: 5rem;
+    line-height: 0.5;
+    color: var(--primary);
+    opacity: 0.3;
+    margin-bottom: 16px;
+    display: block;
+  }
+  .testimonial-text {
+    font-size: 1rem;
+    color: var(--text-body);
+    line-height: 1.8;
+    font-style: italic;
+    margin-bottom: 24px;
+  }
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .author-avatar {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 0.875rem;
+    color: #fff;
+    flex-shrink: 0;
+  }
+  .author-name { font-weight: 700; font-size: 0.9375rem; color: var(--text-dark); }
+  .author-role { font-size: 0.8125rem; color: var(--text-light); }
+  .testimonial-note {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 0.8125rem;
+    color: var(--text-light);
+    font-style: italic;
+  }
+
+  /* ===========================
+     BOTTOM CTA
+  =========================== */
+  #cta-bottom {
+    background: var(--secondary);
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-bottom-inner { position: relative; z-index: 1; text-align: center; }
+  .cta-bottom-inner h2 { color: #fff; margin-bottom: 16px; }
+  .cta-bottom-inner p { color: rgba(255,255,255,0.75); max-width: 560px; margin: 0 auto 36px; font-size: 1.0625rem; }
+  .cta-bottom-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .cta-bottom-email {
+    color: rgba(255,255,255,0.7);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 20px;
+    justify-content: center;
+    transition: color 0.2s;
+  }
+  .cta-bottom-email:hover { color: var(--primary); }
+
+  /* ===========================
+     CONTACT
+  =========================== */
+  #contact { background: var(--surface); }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 64px;
+    align-items: start;
+  }
+  .contact-info h3 { margin-bottom: 24px; color: var(--secondary); }
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .contact-icon {
+    width: 44px; height: 44px;
+    background: var(--accent-soft);
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-dark);
+    flex-shrink: 0;
+  }
+  .contact-item-label { font-size: 0.75rem; font-weight: 700; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 4px; }
+  .contact-item-value { font-weight: 600; color: var(--text-dark); }
+  .contact-item-sub { font-size: 0.875rem; color: var(--text-body); margin-top: 2px; }
+  .privacy-note {
+    background: #fff;
+    border: 1px solid var(--divider);
+    border-radius: var(--radius-sm);
+    padding: 16px;
+    font-size: 0.8125rem;
+    color: var(--text-body);
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin-top: 24px;
+  }
+  .privacy-icon { color: var(--primary); flex-shrink: 0; margin-top: 1px; }
+
+  /* Form */
+  .contact-form-wrap {
+    background: #fff;
+    border-radius: var(--radius-xl);
+    padding: 40px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--divider);
+  }
+  .contact-form-wrap h3 { margin-bottom: 8px; color: var(--secondary); }
+  .form-subtitle { font-size: 0.9rem; color: var(--text-body); margin-bottom: 28px; }
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .form-group { margin-bottom: 18px; }
+  .form-group label {
+    display: block;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 6px;
+  }
+  .form-group label .req { color: var(--primary-dark); }
+  .form-control {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid var(--divider);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 0.9375rem;
+    color: var(--text-dark);
+    background: var(--surface);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+    appearance: none;
+  }
+  .form-control:focus {
+    border-color: var(--primary);
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(26,82,118,0.12);
+  }
+  textarea.form-control { resize: vertical; min-height: 120px; }
+  select.form-control { cursor: pointer; }
+  .form-submit {
+    width: 100%;
+    padding: 16px;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius-pill);
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 4px 20px rgba(26,82,118,0.35);
+  }
+  .form-submit:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(26,82,118,0.4);
+  }
+  .emergency-note {
+    margin-top: 16px;
+    padding: 14px 16px;
+    background: #FFF3E0;
+    border: 1px solid #F59E0B;
+    border-radius: var(--radius-sm);
+    font-size: 0.8125rem;
+    color: #7A4800;
+    display: flex;
+    gap: 8px;
+  }
+
+  /* ===========================
+     FOOTER
+  =========================== */
+  footer {
+    background: var(--secondary);
+    color: rgba(255,255,255,0.7);
+    padding: 64px 0 32px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 48px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 32px;
+  }
+  .footer-brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  .footer-brand-logo-mark {
+    width: 38px; height: 38px;
+    background: var(--primary);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 900;
+    color: #fff;
+  }
+  .footer-brand-name {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: #fff;
+  }
+  .footer-tagline { font-size: 0.9rem; margin-bottom: 20px; line-height: 1.6; }
+  .footer-license-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(26,82,118,0.15);
+    border: 1px solid rgba(26,82,118,0.25);
+    color: var(--primary);
+    padding: 6px 14px;
+    border-radius: var(--radius-pill);
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+  .footer-col h5 {
+    font-family: var(--font-heading);
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 16px;
+  }
+  .footer-col ul { display: flex; flex-direction: column; gap: 8px; }
+  .footer-col ul a {
+    font-size: 0.9rem;
+    transition: color 0.2s;
+  }
+  .footer-col ul a:hover { color: var(--primary); }
+  .footer-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 0.875rem;
+  }
+  .footer-contact-icon { color: var(--primary); flex-shrink: 0; margin-top: 2px; }
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 0.8125rem;
+  }
+
+  /* ===========================
+     SECTION HEADERS
+  =========================== */
+  .section-header { margin-bottom: 56px; }
+  .section-header .overline { display: block; margin-bottom: 12px; }
+  .section-header p { max-width: 560px; margin-top: 12px; font-size: 1.0625rem; }
+  .section-header.centered { text-align: center; }
+  .section-header.centered p { margin: 12px auto 0; }
+
+  /* ===========================
+     RESPONSIVE
+  =========================== */
+  @media (max-width: 1024px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 48px; }
+    .hero-visual { order: -1; max-width: 480px; margin: 0 auto; }
+    .stat-card-1 { left: -16px; }
+    .stat-card-2 { right: -16px; }
+    .why-grid { grid-template-columns: 1fr; gap: 48px; }
+    .approach-inner { grid-template-columns: 1fr; gap: 48px; }
+    .about-grid { grid-template-columns: 1fr; }
+    .about-photo-wrap { position: static; max-width: 380px; }
+    .steps-grid { grid-template-columns: 1fr 1fr; }
+    .steps-grid::before { display: none; }
+    .team-grid { grid-template-columns: 1fr 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 768px) {
+    .section-pad { padding: 72px 0; }
+    .pillars-grid { grid-template-columns: 1fr; }
+    .why-stats { grid-template-columns: 1fr 1fr; }
+    .approach-stats-row { grid-template-columns: 1fr 1fr; }
+    .approach-visual { grid-template-columns: 1fr 1fr; }
+    .approach-tile:first-child { grid-row: span 1; }
+    .testimonials-grid { flex-direction: row; }
+    .testimonial-card { min-width: 300px; max-width: 340px; }
+    .nav-links, .nav-phone { display: none; }
+    .hamburger { display: flex; }
+    .mobile-menu { display: flex; }
+    .steps-grid { grid-template-columns: 1fr; }
+    .values-grid { grid-template-columns: 1fr; }
+    .team-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+    .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+    .hero-ctas { flex-direction: column; align-items: flex-start; }
+    .trust-badges { flex-direction: column; }
+    .form-row { grid-template-columns: 1fr; }
+    .contact-form-wrap { padding: 28px 20px; }
+  }
+  @media (max-width: 480px) {
+    .team-grid { grid-template-columns: 1fr; }
+    .why-stats { grid-template-columns: 1fr; }
+  }
+
+  /* Hero CSS entrance animations */
+  @keyframes heroFadeUp {
+    from { opacity: 0; transform: translateY(28px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes heroSlideRight {
+    from { opacity: 0; transform: translateX(40px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  @keyframes heroScaleIn {
+    from { opacity: 0; transform: scale(0.85); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  #hero .hero-content > *:nth-child(1) { animation: heroFadeUp 0.7s cubic-bezier(0.16,1,0.3,1) 0.15s both; }
+  #hero .hero-content > *:nth-child(2) { animation: heroFadeUp 0.7s cubic-bezier(0.16,1,0.3,1) 0.28s both; }
+  #hero .hero-content > *:nth-child(3) { animation: heroFadeUp 0.7s cubic-bezier(0.16,1,0.3,1) 0.42s both; }
+  #hero .hero-content > *:nth-child(4) { animation: heroFadeUp 0.7s cubic-bezier(0.16,1,0.3,1) 0.56s both; }
+  #hero .hero-content > *:nth-child(5) { animation: heroFadeUp 0.7s cubic-bezier(0.16,1,0.3,1) 0.7s both; }
+  #hero .hero-visual { animation: heroSlideRight 0.9s cubic-bezier(0.16,1,0.3,1) 0.5s both; }
+  .stat-card:nth-child(1) { animation: heroScaleIn 0.6s cubic-bezier(0.16,1,0.3,1) 0.9s both; }
+  .stat-card:nth-child(2) { animation: heroScaleIn 0.6s cubic-bezier(0.16,1,0.3,1) 1.1s both; }
+
+  /* Scroll-reveal animations via Intersection Observer */
+  .reveal, .pillar-card, .timeline-item, .step-card, .team-card, .why-stat, .testimonial-card {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.65s cubic-bezier(0.16,1,0.3,1), transform 0.65s cubic-bezier(0.16,1,0.3,1);
+  }
+  .timeline-item { transform: translateX(-30px); }
+  .why-stat { transform: scale(0.9); }
+
+  .reveal.in-view, .pillar-card.in-view, .timeline-item.in-view, .step-card.in-view,
+  .team-card.in-view, .why-stat.in-view, .stat-card.in-view, .testimonial-card.in-view {
+    opacity: 1;
+    transform: translateY(0) translateX(0) scale(1);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #hero .hero-content > *, #hero .hero-visual, .stat-card,
+    .reveal, .pillar-card, .timeline-item, .step-card, .team-card, .why-stat, .testimonial-card {
+      animation: none !important;
+      opacity: 1 !important;
+      transform: none !important;
+      transition: none !important;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===========================
+     NAVIGATION
+=========================== -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="Care Option home">
+        <div class="nav-logo-mark" aria-hidden="true">C</div>
+        <span>Care Option <span style="font-weight:400; color: var(--primary-dark);">RTC</span></span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#pillars">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="tel:+12818093653" class="nav-phone" aria-label="Call us at (281) 809-3653">
+        <i data-lucide="phone" style="width:15px;height:15px" aria-hidden="true"></i>
+        (281) 809-3653
+      </a>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" id="hamburger-btn">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <button class="mobile-close" id="mobile-close" aria-label="Close menu">&times;</button>
+  <a href="#pillars" class="mobile-link">About</a>
+  <a href="#services" class="mobile-link">Services</a>
+  <a href="#about" class="mobile-link">Our Story</a>
+  <a href="#team" class="mobile-link">Team</a>
+  <a href="#contact" class="mobile-link">Contact</a>
+  <a href="tel:+12818093653" class="btn btn-primary" style="margin-top:8px">
+    <i data-lucide="phone" style="width:16px;height:16px" aria-hidden="true"></i>
+    (281) 809-3653
+  </a>
+</div>
+
+<!-- ===========================
+     HERO
+=========================== -->
+<section id="hero" aria-labelledby="hero-heading">
+  <div class="hero-bg"></div>
+  <div class="blob hero-blob-1"></div>
+  <div class="blob hero-blob-2"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge" role="status">
+          <span class="dot" aria-hidden="true"></span>
+          Now accepting placements · Houston, TX
+        </div>
+        <h1 id="hero-heading">
+          A Safe Place to <em>Heal, Grow,</em> and Be a Kid Again.
+        </h1>
+        <p class="hero-sub">
+          Care Option Residential Treatment Center provides a warm, home-like environment for boys ages 8–15, where professional care meets real childhood — school, friends, activities, and the stability every child deserves.
+        </p>
+        <div class="hero-ctas">
+          <a href="tel:+12818093653" class="btn btn-primary" aria-label="Call Care Option at (281) 809-3653">
+            <i data-lucide="phone" style="width:18px;height:18px" aria-hidden="true"></i>
+            Call Us Now — (281) 809-3653
+          </a>
+          <a href="#services" class="btn btn-outline">
+            Learn About Our Services
+            <i data-lucide="arrow-right" style="width:16px;height:16px" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="trust-badges" role="list" aria-label="Trust indicators">
+          <div class="trust-badge" role="listitem">
+            <i data-lucide="shield-check" class="trust-badge-icon" style="width:14px;height:14px" aria-hidden="true"></i>
+            Licensed in Texas
+          </div>
+          <div class="trust-badge" role="listitem">
+            <i data-lucide="award" class="trust-badge-icon" style="width:14px;height:14px" aria-hidden="true"></i>
+            15+ Years Healthcare
+          </div>
+          <div class="trust-badge" role="listitem">
+            <i data-lucide="home" class="trust-badge-icon" style="width:14px;height:14px" aria-hidden="true"></i>
+            Boys Ages 8–15
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-card-main">
+          <img src="images/hero.png" alt="Boys at Care Option">
+        </div>
+
+        <!-- Stat cards -->
+        <div class="stat-card stat-card-1">
+          <div class="stat-icon">
+            <i data-lucide="graduation-cap" style="width:20px;height:20px" aria-hidden="true"></i>
+          </div>
+          <div>
+            <div class="stat-label">School Attendance</div>
+            <div class="stat-value">Every Day</div>
+          </div>
+        </div>
+        <div class="stat-card stat-card-2">
+          <div class="stat-icon">
+            <i data-lucide="heart-handshake" style="width:20px;height:20px" aria-hidden="true"></i>
+          </div>
+          <div>
+            <div class="stat-label">Ages Served</div>
+            <div class="stat-value">8 – 15</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Wave -->
+<div class="wave-divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,40 C360,80 1080,0 1440,40 L1440,60 L0,60 Z" fill="#FFFFFF"/>
+  </svg>
+</div>
+
+<!-- ===========================
+     THREE PILLARS
+=========================== -->
+<section id="pillars" class="section-pad" aria-labelledby="pillars-heading">
+  <div class="container">
+    <div class="section-header centered pillars-intro reveal">
+      <span class="overline">What Life Looks Like Here</span>
+      <h2 id="pillars-heading">More Than a Placement —<br>A Home That Works For Him</h2>
+      <p>We believe that healing happens when children feel safe, valued, and normal. Not just cared for — but genuinely at home.</p>
+    </div>
+    <div class="pillars-grid">
+      <article class="pillar-card reveal" aria-labelledby="pillar-1-title">
+        <div class="pillar-icon" aria-hidden="true">
+          <i data-lucide="home" style="width:26px;height:26px"></i>
+        </div>
+        <h3 id="pillar-1-title">A Real Home Environment</h3>
+        <p>Boys at Care Option live in a structured, nurturing home setting — not a clinical facility. Daily routines, family-style meals, and consistent caregivers give every child the stability that's essential for growth and healing.</p>
+      </article>
+      <article class="pillar-card reveal" aria-labelledby="pillar-2-title" style="--delay: 0.12s">
+        <div class="pillar-icon" aria-hidden="true">
+          <i data-lucide="book-open" style="width:26px;height:26px"></i>
+        </div>
+        <h3 id="pillar-2-title">School Stays on Track</h3>
+        <p>Academic progress doesn't stop. Our boys attend regular local schools, maintaining their education, peer relationships, and sense of normalcy — because a child's future matters as much as their present.</p>
+      </article>
+      <article class="pillar-card reveal" aria-labelledby="pillar-3-title" style="--delay: 0.24s">
+        <div class="pillar-icon" aria-hidden="true">
+          <i data-lucide="star" style="width:26px;height:26px"></i>
+        </div>
+        <h3 id="pillar-3-title">Childhood, Preserved</h3>
+        <p>Sports, arts, field trips, life skills, and community events are woven into every week. Because being a kid matters — and no child in our care should miss out on the moments that make childhood meaningful.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Wave -->
+<div class="wave-divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,20 C360,60 1080,-20 1440,20 L1440,60 L0,60 Z" fill="#0E2233"/>
+  </svg>
+</div>
+
+<!-- ===========================
+     WHY CARE OPTION
+=========================== -->
+<section id="why" class="section-pad" aria-labelledby="why-heading">
+  <div class="blob why-blob" style="width:400px;height:400px;top:-100px;right:-80px"></div>
+  <div class="blob why-blob" style="width:250px;height:250px;bottom:50px;left:-60px"></div>
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-left reveal">
+        <span class="overline">Experience You Can Trust</span>
+        <h2 id="why-heading">Care You Can Feel.</h2>
+        <p>Every family and agency that places a boy with us deserves to know they made the right call. Here's what makes Care Option different from every other program in Houston.</p>
+        <div class="trust-points">
+          <div class="trust-point">
+            <div class="trust-point-icon" aria-hidden="true">
+              <i data-lucide="award" style="width:22px;height:22px"></i>
+            </div>
+            <div>
+              <h4>15+ Years of Healthcare Leadership</h4>
+              <p>Founder Margaret Nwajiaku built and led Reez Home Health Services, a Medicare Certified agency, for over 15 years. Her clinical standards now run Care Option.</p>
+            </div>
+          </div>
+          <div class="trust-point">
+            <div class="trust-point-icon" aria-hidden="true">
+              <i data-lucide="pill" style="width:22px;height:22px"></i>
+            </div>
+            <div>
+              <h4>Licensed Medication Administration</h4>
+              <p>We are licensed to administer medications. Strict protocols, meticulous documentation, and trained staff ensure every prescription is managed safely.</p>
+            </div>
+          </div>
+          <div class="trust-point">
+            <div class="trust-point-icon" aria-hidden="true">
+              <i data-lucide="baby" style="width:22px;height:22px"></i>
+            </div>
+            <div>
+              <h4>Serving the Youngest — Ages 8 and Up</h4>
+              <p>Most Houston programs start at 12 or older. We serve boys as young as 8, closing the gap that leaves younger children waiting too long for help.</p>
+            </div>
+          </div>
+          <div class="trust-point">
+            <div class="trust-point-icon" aria-hidden="true">
+              <i data-lucide="heart" style="width:22px;height:22px"></i>
+            </div>
+            <div>
+              <h4>Structure That Feels Like Home</h4>
+              <p>Consistent staff, home-cooked meals, private bedrooms, and a familiar daily rhythm — because stability is not clinical, it's personal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why-right reveal">
+        <div class="why-stats">
+          <div class="why-stat">
+            <div class="why-stat-icon" aria-hidden="true">
+              <i data-lucide="stethoscope" style="width:22px;height:22px"></i>
+            </div>
+            <div class="why-stat-num" data-count="15" data-suffix="+">15+</div>
+            <div class="why-stat-label">Years Healthcare Experience</div>
+          </div>
+          <div class="why-stat">
+            <div class="why-stat-icon" aria-hidden="true">
+              <i data-lucide="users" style="width:22px;height:22px"></i>
+            </div>
+            <div class="why-stat-num" data-count="8" data-suffix="">8</div>
+            <div class="why-stat-label">Youngest Age Served (Most programs start at 12)</div>
+          </div>
+          <div class="why-stat">
+            <div class="why-stat-icon" aria-hidden="true">
+              <i data-lucide="clock" style="width:22px;height:22px"></i>
+            </div>
+            <div class="why-stat-num" data-count="24" data-suffix="/7">24/7</div>
+            <div class="why-stat-label">Licensed Staff Supervision</div>
+          </div>
+          <div class="why-stat">
+            <div class="why-stat-icon" aria-hidden="true">
+              <i data-lucide="school" style="width:22px;height:22px"></i>
+            </div>
+            <div class="why-stat-num" data-count="100" data-suffix="%">100%</div>
+            <div class="why-stat-label">School Attendance Maintained</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Wave -->
+<div class="wave-divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,40 C360,0 1080,60 1440,40 L1440,0 L0,0 Z" fill="#0E2233"/>
+  </svg>
+</div>
+
+<!-- ===========================
+     NORMALCY APPROACH
+=========================== -->
+<section id="approach" class="section-pad" aria-labelledby="approach-heading">
+  <div class="container">
+    <div class="approach-inner">
+      <div class="approach-text reveal">
+        <span class="overline">Our Philosophy</span>
+        <h2 id="approach-heading">We Call It the Normalcy Approach.</h2>
+        <blockquote class="approach-quote">
+          "Children heal faster when they stay connected to normal life."
+        </blockquote>
+        <p>Research is clear: children heal faster when they maintain connection to normal life. At Care Option, we work tirelessly to keep every boy connected to what matters — his education, his hobbies, his community, and his family.</p>
+        <p style="margin-top:16px">That means our boys go to school every morning just like any other kid in the neighborhood. They play sports. They have chores. They eat together. They grow. We don't isolate healing behind walls — we let it happen in the middle of real life.</p>
+        <div class="approach-stats-row" role="list" aria-label="Program highlights">
+          <div class="approach-stat" role="listitem">
+            <span class="approach-stat-num">8–15</span>
+            <span class="approach-stat-label">Boys' Ages Served</span>
+          </div>
+          <div class="approach-stat" role="listitem">
+            <span class="approach-stat-num">Daily</span>
+            <span class="approach-stat-label">Local School Attendance</span>
+          </div>
+          <div class="approach-stat" role="listitem">
+            <span class="approach-stat-num">Weekly</span>
+            <span class="approach-stat-label">Sports, Arts & Life Skills</span>
+          </div>
+          <div class="approach-stat" role="listitem">
+            <span class="approach-stat-num">24/7</span>
+            <span class="approach-stat-label">Licensed Supervision</span>
+          </div>
+        </div>
+      </div>
+      <div class="approach-visual reveal" aria-hidden="true">
+        <div class="approach-tile" style="background:var(--primary); color:#fff; grid-row: span 2; overflow:hidden; padding:0; position:relative;">
+          <img src="images/school.png" alt="Boy studying in classroom" style="width:100%; height:100%; object-fit:cover;">
+          <div style="position:absolute; bottom:0; left:0; right:0; padding:16px 20px; background:linear-gradient(transparent, rgba(14,34,51,0.85));">
+            <h4 style="color:#fff; margin-bottom:4px;">Education First</h4>
+            <p style="color:rgba(255,255,255,0.8); font-size:13px;">Every boy attends local school, keeps his IEP, and stays on grade level.</p>
+          </div>
+        </div>
+        <div class="approach-tile" style="background:#fff; box-shadow: var(--shadow-sm); overflow:hidden; padding:0; position:relative;">
+          <img src="images/hero.png" alt="Boys at home" style="width:100%; height:100%; object-fit:cover;">
+          <div style="position:absolute; bottom:0; left:0; right:0; padding:12px 16px; background:linear-gradient(transparent, rgba(14,34,51,0.8));">
+            <h4 style="color:#fff; font-size:14px;">Home Routines</h4>
+          </div>
+        </div>
+        <div class="approach-tile" style="background:var(--accent-warm); overflow:hidden; padding:0; position:relative;">
+          <img src="images/activities.png" alt="Boys playing basketball" style="width:100%; height:100%; object-fit:cover;">
+          <div style="position:absolute; bottom:0; left:0; right:0; padding:12px 16px; background:linear-gradient(transparent, rgba(14,34,51,0.8));">
+            <h4 style="color:#fff; font-size:14px;">Sports & Play</h4>
+          </div>
+        </div>
+        <div class="approach-tile" style="background:var(--secondary); color:#fff; overflow:hidden; padding:0; position:relative;">
+          <img src="images/family-connection.png" alt="Family visit at Care Option" style="width:100%; height:100%; object-fit:cover;">
+          <div style="position:absolute; bottom:0; left:0; right:0; padding:12px 16px; background:linear-gradient(transparent, rgba(14,34,51,0.85));">
+            <h4 style="color:#fff; font-size:14px;">Family Connection</h4>
+            <p style="color:rgba(255,255,255,0.8); font-size:11px;">Regular visits and communication built in.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Wave -->
+<div class="wave-divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,20 C480,60 960,0 1440,20 L1440,60 L0,60 Z" fill="#FFFFFF"/>
+  </svg>
+</div>
+
+<!-- ===========================
+     ABOUT MARGARET
+=========================== -->
+<section id="about" class="section-pad" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-photo-wrap reveal">
+        <div class="about-photo" aria-hidden="true" style="overflow:hidden; border-radius:16px;">
+          <img src="images/activities.png" alt="Boys playing outdoors at Care Option" style="width: 100%; border-radius: 16px; object-fit: cover;">
+          <div class="about-photo-badge">
+            <div class="about-photo-badge-name">Care Option RTC</div>
+            <div class="about-photo-badge-title">Residential Treatment Center — Houston, TX</div>
+            <div class="about-photo-badge-cred">
+              <i data-lucide="check-circle" style="width:13px;height:13px" aria-hidden="true"></i>
+              15+ Years Healthcare Leadership
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <div class="reveal">
+          <span class="overline">Why Care Option Exists</span>
+          <h2 id="about-heading">Built for the Boys No One Else Was Serving.</h2>
+          <p class="about-subtitle">From Medicare-Certified home health expertise to Houston's most caring residential program.</p>
+        </div>
+
+        <div class="about-story reveal">
+          <p>Care Option Residential Treatment Center was founded by a healthcare leader with over 15 years of experience running a Medicare-certified home health agency — serving some of the most medically complex patients in the Houston area.</p>
+          <p style="margin-top:14px">That experience revealed a critical gap: boys as young as 8 falling through the cracks of the system. Too young for most programs. Placement options running out at the exact moment they needed stability the most.</p>
+          <p style="margin-top:14px">Care Option was built to be the answer to that gap — a home where a boy who feels safe, who goes to school every morning, who has someone in his corner, can actually heal. Not just survive. <strong style="color:var(--secondary)">Thrive.</strong></p>
+        </div>
+
+        <div class="mv-block reveal">
+          <h4><span>◆</span> Our Mission</h4>
+          <p>To provide a safe, nurturing, home-like environment where boys ages 8–15 receive the professional care, educational support, and normalcy activities they need to stabilize, grow, and successfully return to their families and communities.</p>
+        </div>
+
+        <div class="mv-block reveal">
+          <h4><span>◆</span> Our Vision</h4>
+          <p>A Houston where no child waits too long for help — and every boy who needs a safe place finds one.</p>
+        </div>
+
+        <div class="reveal">
+          <h4 style="margin-bottom:16px; color:var(--secondary)">Our Core Values</h4>
+          <div class="values-grid" role="list">
+            <div class="value-chip" role="listitem">
+              <i data-lucide="shield" class="value-chip-icon" style="width:16px;height:16px" aria-hidden="true"></i>
+              Safety Above All
+            </div>
+            <div class="value-chip" role="listitem">
+              <i data-lucide="heart" class="value-chip-icon" style="width:16px;height:16px" aria-hidden="true"></i>
+              Dignity in Every Interaction
+            </div>
+            <div class="value-chip" role="listitem">
+              <i data-lucide="repeat" class="value-chip-icon" style="width:16px;height:16px" aria-hidden="true"></i>
+              Continuity of Normal Life
+            </div>
+            <div class="value-chip" role="listitem">
+              <i data-lucide="handshake" class="value-chip-icon" style="width:16px;height:16px" aria-hidden="true"></i>
+              Partnership with Families
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Wave -->
+<div class="wave-divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#FAFAF7"/>
+  </svg>
+</div>
+
+<!-- ===========================
+     DAILY LIFE / SERVICES
+=========================== -->
+<section id="services" class="section-pad" aria-labelledby="services-heading">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <span class="overline">Daily Life at Care Option</span>
+      <h2 id="services-heading">What a Day at Care Option Looks Like</h2>
+      <p>Structure creates safety. Every day is intentional — and every moment is an opportunity for growth, connection, and just being a kid.</p>
+    </div>
+
+    <div class="timeline" role="list">
+      <div class="timeline-item reveal" role="listitem">
+        <div class="timeline-dot" aria-hidden="true">
+          <i data-lucide="sunrise" style="width:22px;height:22px"></i>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-time">Morning · 7:00 AM</div>
+          <h4>Wake Up, Breakfast & School Prep</h4>
+          <p>Boys start with a consistent morning routine — hygiene, a home-cooked breakfast together, and preparation for the school day. Structure here sets the tone for everything that follows.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal" role="listitem">
+        <div class="timeline-dot" aria-hidden="true">
+          <i data-lucide="book-open" style="width:22px;height:22px"></i>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-time">School Day · 8:00 AM – 3:00 PM</div>
+          <h4>Local Schools — Just Like Any Other Kid</h4>
+          <p>We provide transportation to and from neighborhood schools. IEP coordination, academic support, and communication with school counselors are handled as a matter of standard care.</p>
+          <img src="images/school.png" alt="Boy studying in classroom" style="width: 100%; border-radius: 12px; object-fit: cover; margin: 12px 0;">
+        </div>
+      </div>
+      <div class="timeline-item reveal" role="listitem">
+        <div class="timeline-dot" aria-hidden="true">
+          <i data-lucide="activity" style="width:22px;height:22px"></i>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-time">Afternoon · 3:30 – 6:00 PM</div>
+          <h4>Snacks, Sports & Organized Activities</h4>
+          <p>After school means snacks, outdoor play, organized sports, arts and crafts, and life skills activities. Every afternoon has purpose — and plenty of room to just play.</p>
+          <img src="images/activities.png" alt="Boys playing basketball outdoors" style="width: 100%; border-radius: 12px; object-fit: cover; margin: 12px 0;">
+        </div>
+      </div>
+      <div class="timeline-item reveal" role="listitem">
+        <div class="timeline-dot" aria-hidden="true">
+          <i data-lucide="utensils" style="width:22px;height:22px"></i>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-time">Evening · 6:00 – 9:00 PM</div>
+          <h4>Family-Style Dinner, Games & Wind Down</h4>
+          <p>Evenings center on a shared dinner where conversation and connection happen naturally. Followed by board games, reading time, and a consistent bedtime routine that signals safety and predictability.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal" role="listitem">
+        <div class="timeline-dot" aria-hidden="true">
+          <i data-lucide="map" style="width:22px;height:22px"></i>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-time">Weekends</div>
+          <h4>Community Outings, Recreation & Family Visits</h4>
+          <p>Weekends bring community outings, recreation programs, and carefully facilitated family visits. Boys stay connected to the world outside — because that's where they'll eventually return.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Wave -->
+<div class="wave-divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,40 C480,0 960,60 1440,40 L1440,60 L0,60 Z" fill="#FFFFFF"/>
+  </svg>
+</div>
+
+<!-- ===========================
+     ADMISSION PROCESS
+=========================== -->
+<section id="admission" class="section-pad" aria-labelledby="admission-heading">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <span class="overline">Getting Started</span>
+      <h2 id="admission-heading">How Placement Works</h2>
+      <p>We've made the process as straightforward as possible. Our team is here to guide you every step of the way — with clarity, not paperwork overload.</p>
+    </div>
+
+    <div class="steps-grid" role="list">
+      <div class="step-card reveal" role="listitem">
+        <div class="step-num" aria-hidden="true">1</div>
+        <h4>Initial Contact</h4>
+        <p>Call us at (281) 809-3653 or email careoptionrtc@gmail.com. You'll speak directly with our team — not a call center. Ask anything. We have time for you.</p>
+      </div>
+      <div class="step-card reveal" role="listitem">
+        <div class="step-num" aria-hidden="true">2</div>
+        <h4>Intake Assessment</h4>
+        <p>We review the child's clinical history, medical records, school records, and current situation to ensure we're the right fit — and that we can provide what he needs.</p>
+      </div>
+      <div class="step-card reveal" role="listitem">
+        <div class="step-num" aria-hidden="true">3</div>
+        <h4>Placement Decision</h4>
+        <p>We coordinate with the case worker, referring agency, or legal representative to finalize paperwork, authorizations, and transition details efficiently.</p>
+      </div>
+      <div class="step-card reveal" role="listitem">
+        <div class="step-num" aria-hidden="true">4</div>
+        <h4>Move-In & Transition</h4>
+        <p>His space is prepared before he arrives. The first day is calm, unhurried, and designed to reduce anxiety. Families and case workers receive immediate contact once he's settled.</p>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:48px" class="reveal">
+      <p style="color:var(--text-light); margin-bottom:20px; font-size:0.9375rem">Placement calls accepted Monday–Saturday, 8:00 AM – 6:00 PM</p>
+      <a href="tel:+12818093653" class="btn btn-primary" style="font-size:1.0625rem; padding: 16px 36px">
+        <i data-lucide="phone" style="width:18px;height:18px" aria-hidden="true"></i>
+        Start the Conversation — (281) 809-3653
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Wave -->
+<div class="wave-divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,20 C360,60 1080,-10 1440,20 L1440,60 L0,60 Z" fill="#FAFAF7"/>
+  </svg>
+</div>
+
+<!-- ===========================
+     TEAM
+=========================== -->
+<section id="team" class="section-pad" aria-labelledby="team-heading">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <span class="overline">Our Standards</span>
+      <h2 id="team-heading">Professional Care You Can Trust</h2>
+      <p>Every member of our team is screened, trained, and held to the highest standards in residential youth care.</p>
+      <div style="margin-top:24px;">
+        <img src="images/team-horizontal.png" alt="Care Option professional team" style="width:100%; max-width:600px; border-radius:16px; object-fit:cover; margin:0 auto; box-shadow:var(--shadow-md);">
+      </div>
+    </div>
+
+    <div class="team-grid">
+      <!-- Credential 1 -->
+      <article class="team-card reveal">
+        <div style="padding:24px 24px 0; display:flex; align-items:center; gap:14px;">
+          <div style="width:52px;height:52px;border-radius:12px;background:var(--primary);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <i data-lucide="shield-check" style="width:24px;height:24px;color:#fff" aria-hidden="true"></i>
+          </div>
+          <div>
+            <h4 style="color:var(--secondary);font-size:16px;">Background Checked & Cleared</h4>
+            <div class="team-role">Every staff member</div>
+          </div>
+        </div>
+        <div class="team-info">
+          <p>Full criminal background check, reference verification, and drug screening completed before any staff member interacts with residents. No exceptions.</p>
+        </div>
+      </article>
+
+      <!-- Credential 2 -->
+      <article class="team-card reveal">
+        <div style="padding:24px 24px 0; display:flex; align-items:center; gap:14px;">
+          <div style="width:52px;height:52px;border-radius:12px;background:var(--primary);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <i data-lucide="graduation-cap" style="width:24px;height:24px;color:#fff" aria-hidden="true"></i>
+          </div>
+          <div>
+            <h4 style="color:var(--secondary);font-size:16px;">Trained in Trauma-Informed Care</h4>
+            <div class="team-role">Ongoing professional development</div>
+          </div>
+        </div>
+        <div class="team-info">
+          <p>All caregivers receive specialized training in trauma-informed approaches, de-escalation techniques, CPR/First Aid certification, and medication administration.</p>
+        </div>
+      </article>
+
+      <!-- Credential 3 -->
+      <article class="team-card reveal">
+        <div style="padding:24px 24px 0; display:flex; align-items:center; gap:14px;">
+          <div style="width:52px;height:52px;border-radius:12px;background:var(--primary);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <i data-lucide="users" style="width:24px;height:24px;color:#fff" aria-hidden="true"></i>
+          </div>
+          <div>
+            <h4 style="color:var(--secondary);font-size:16px;">Consistent Staff, Not Rotating Shifts</h4>
+            <div class="team-role">Stability for every child</div>
+          </div>
+        </div>
+        <div class="team-info">
+          <p>Boys see the same caregivers every day — building the trust and predictability that's essential for healing. We don't use temp agencies or contract workers.</p>
+        </div>
+      </article>
+
+      <!-- Credential 4 -->
+      <article class="team-card reveal">
+        <div style="padding:24px 24px 0; display:flex; align-items:center; gap:14px;">
+          <div style="width:52px;height:52px;border-radius:12px;background:var(--accent-warm);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <i data-lucide="award" style="width:24px;height:24px;color:var(--secondary)" aria-hidden="true"></i>
+          </div>
+          <div>
+            <h4 style="color:var(--secondary);font-size:16px;">15+ Years Leadership Experience</h4>
+            <div class="team-role">Founded by healthcare veterans</div>
+          </div>
+        </div>
+        <div class="team-info">
+          <p>Care Option was built by a Medicare-certified healthcare operator with over 15 years of experience. The same standards that earned federal certification now protect your child.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Wave -->
+<div class="wave-divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,40 C360,0 1080,60 1440,40 L1440,60 L0,60 Z" fill="#FFFFFF"/>
+  </svg>
+</div>
+
+<!-- ===========================
+     TESTIMONIALS
+=========================== -->
+<section id="testimonials" class="section-pad" aria-labelledby="testimonials-heading">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <span class="overline">What Families Are Saying</span>
+      <h2 id="testimonials-heading">Words From the People Who Matter Most</h2>
+    </div>
+
+    <div class="testimonials-grid">
+      <article class="testimonial-card" aria-labelledby="testimonial-1-author">
+        <span class="quote-mark" aria-hidden="true">"</span>
+        <p class="testimonial-text">From the first phone call, we knew Care Option was different. Margaret personally walked us through every step, and our son came home more confident and more connected than we could have hoped. They didn't just care for him — they cared <em>about</em> him.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" aria-hidden="true">P</div>
+          <div>
+            <div id="testimonial-1-author" class="author-name">Parent of a Former Resident</div>
+            <div class="author-role">Houston, TX</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card" aria-labelledby="testimonial-2-author">
+        <span class="quote-mark" aria-hidden="true">"</span>
+        <p class="testimonial-text">As a case worker, I've placed boys in many programs across Houston. Care Option stands out for how professionally they communicate, how proactively they document, and — most importantly — how genuinely the staff cares. I recommend them without hesitation.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" aria-hidden="true">CW</div>
+          <div>
+            <div id="testimonial-2-author" class="author-name">Licensed Case Worker</div>
+            <div class="author-role">Harris County, TX</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card" aria-labelledby="testimonial-3-author">
+        <span class="quote-mark" aria-hidden="true">"</span>
+        <p class="testimonial-text">My grandson had been through two other placements before Care Option. Within the first month, he was sleeping through the night, going to school every day, and actually smiling again. The consistency of the staff made all the difference.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" aria-hidden="true">G</div>
+          <div>
+            <div id="testimonial-3-author" class="author-name">Grandmother & Legal Guardian</div>
+            <div class="author-role">Sugar Land, TX</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card" aria-labelledby="testimonial-4-author">
+        <span class="quote-mark" aria-hidden="true">"</span>
+        <p class="testimonial-text">What impressed me most was the communication. Every week I got updates about his school progress, his behavior, his mood. I never had to chase anyone for information. They treated me like a partner, not an outsider.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" aria-hidden="true">M</div>
+          <div>
+            <div id="testimonial-4-author" class="author-name">Mother of Current Resident</div>
+            <div class="author-role">Katy, TX</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card" aria-labelledby="testimonial-5-author">
+        <span class="quote-mark" aria-hidden="true">"</span>
+        <p class="testimonial-text">I've worked with residential programs across the state for 12 years. Care Option is one of the few that truly understands what 'normalcy' means. These boys aren't just housed — they're living. School, sports, chores, real life. That's rare.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" aria-hidden="true">JD</div>
+          <div>
+            <div id="testimonial-5-author" class="author-name">DFPS Placement Coordinator</div>
+            <div class="author-role">Texas Region 6</div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="testimonial-dots" aria-label="Testimonial navigation">
+      <button class="testimonial-dot active" onclick="scrollTestimonial(0)" aria-label="Testimonial 1"></button>
+      <button class="testimonial-dot" onclick="scrollTestimonial(1)" aria-label="Testimonial 2"></button>
+      <button class="testimonial-dot" onclick="scrollTestimonial(2)" aria-label="Testimonial 3"></button>
+      <button class="testimonial-dot" onclick="scrollTestimonial(3)" aria-label="Testimonial 4"></button>
+      <button class="testimonial-dot" onclick="scrollTestimonial(4)" aria-label="Testimonial 5"></button>
+    </div>
+    <p class="testimonial-note">Representative testimonials. Names withheld to protect the privacy of residents and families.</p>
+  </div>
+</section>
+
+<!-- ===========================
+     BOTTOM CTA
+=========================== -->
+<section id="cta-bottom" class="section-pad" aria-labelledby="cta-heading">
+  <div class="blob" style="width:400px;height:400px;top:-80px;right:-80px;background:rgba(26,82,118,0.15);blur:80px"></div>
+  <div class="container">
+    <div class="cta-bottom-inner reveal">
+      <span class="overline" style="color:var(--primary); display:block; margin-bottom:16px">Every Day Matters</span>
+      <h2 id="cta-heading" style="color:#fff; font-size:clamp(1.75rem,4vw,2.8rem); max-width:640px; margin:0 auto 16px">Let's Talk About Your Son.</h2>
+      <p>We know this process can feel overwhelming. Our team is ready to answer your questions and walk you through the admission process — with no pressure, just information and support.</p>
+      <div class="cta-bottom-actions">
+        <a href="tel:+12818093653" class="btn btn-primary" style="font-size:1.0625rem; padding:18px 36px" aria-label="Call Care Option at (281) 809-3653">
+          <i data-lucide="phone" style="width:20px;height:20px" aria-hidden="true"></i>
+          Call (281) 809-3653 — We're Here
+        </a>
+        <a href="#contact" class="btn btn-ghost-white">
+          <i data-lucide="message-circle" style="width:18px;height:18px" aria-hidden="true"></i>
+          Send a Message
+        </a>
+      </div>
+      <a href="mailto:careoptionrtc@gmail.com" class="cta-bottom-email">
+        <i data-lucide="mail" style="width:15px;height:15px" aria-hidden="true"></i>
+        Or email us: careoptionrtc@gmail.com
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Wave -->
+<div class="wave-divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,30 C480,60 960,0 1440,30 L1440,60 L0,60 Z" fill="#FAFAF7"/>
+  </svg>
+</div>
+
+<!-- ===========================
+     CONTACT
+=========================== -->
+<section id="contact" class="section-pad" aria-labelledby="contact-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="overline">Get in Touch</span>
+      <h2 id="contact-heading">Let's Talk</h2>
+      <p>Whether you're a parent, case worker, court representative, or referring agency — we're here and we're ready to help.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h3>Reach Us Directly</h3>
+
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true">
+            <i data-lucide="phone" style="width:20px;height:20px"></i>
+          </div>
+          <div>
+            <div class="contact-item-label">Phone</div>
+            <a href="tel:+12818093653" class="contact-item-value" style="font-size:1.1rem">(281) 809-3653</a>
+            <div class="contact-item-sub">Placement calls: Mon–Sat, 8:00 AM – 6:00 PM</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true">
+            <i data-lucide="mail" style="width:20px;height:20px"></i>
+          </div>
+          <div>
+            <div class="contact-item-label">Email</div>
+            <a href="mailto:careoptionrtc@gmail.com" class="contact-item-value">careoptionrtc@gmail.com</a>
+            <div class="contact-item-sub">We respond within one business day</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true">
+            <i data-lucide="map-pin" style="width:20px;height:20px"></i>
+          </div>
+          <div>
+            <div class="contact-item-label">Location</div>
+            <div class="contact-item-value">Greater Houston Area, TX</div>
+            <div class="contact-item-sub">Licensed in the State of Texas</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true">
+            <i data-lucide="clock" style="width:20px;height:20px"></i>
+          </div>
+          <div>
+            <div class="contact-item-label">Office Hours</div>
+            <div class="contact-item-value">Mon – Fri: 10:00 AM – 5:00 PM</div>
+            <div class="contact-item-sub">Placement line also available Saturdays</div>
+          </div>
+        </div>
+
+        <div class="privacy-note" role="note" aria-label="Privacy notice">
+          <i data-lucide="lock" class="privacy-icon" style="width:16px;height:16px" aria-hidden="true"></i>
+          <span>Exact facility address is provided upon confirmed intake inquiry to protect the privacy and security of our current residents.</span>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-wrap reveal">
+        <h3>Send Us a Message</h3>
+        <p class="form-subtitle">Fill out the form below and a member of our team will reach out within one business day.</p>
+
+        <form name="contact" id="contact-form" novalidate aria-label="Contact form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="full-name">Full Name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="full-name" name="full_name" class="form-control" required placeholder="Jane Smith" autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="req" aria-hidden="true">*</span></label>
+              <input type="tel" id="phone" name="phone" class="form-control" required placeholder="(713) 000-0000" autocomplete="tel">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="jane@example.com" autocomplete="email">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="relationship">Your Relationship to the Child <span class="req" aria-hidden="true">*</span></label>
+              <select id="relationship" name="relationship" class="form-control" required>
+                <option value="" disabled selected>Select one</option>
+                <option value="parent">Parent / Guardian</option>
+                <option value="caseworker">Case Worker</option>
+                <option value="agency">Agency Representative</option>
+                <option value="court">Court / Legal Representative</option>
+                <option value="family">Family Member</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="child-age">Child's Age</label>
+              <input type="number" id="child-age" name="child_age" class="form-control" min="8" max="15" placeholder="e.g. 10">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="referral-source">How Did You Hear About Us?</label>
+            <select id="referral-source" name="referral_source" class="form-control">
+              <option value="" disabled selected>Select one</option>
+              <option value="google">Google Search</option>
+              <option value="caseworker-referral">Case Worker Referral</option>
+              <option value="agency-referral">Agency Referral</option>
+              <option value="court">Court / Judge</option>
+              <option value="word-of-mouth">Word of Mouth</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" class="form-control" required placeholder="Tell us a little about the child's situation and how we can help. All information is kept strictly confidential."></textarea>
+          </div>
+
+          <button type="submit" class="form-submit" id="form-submit-btn">
+            <i data-lucide="send" style="width:16px;height:16px" aria-hidden="true"></i>
+            Send Message
+          </button>
+
+          <div class="emergency-note" role="alert">
+            <i data-lucide="alert-triangle" style="width:14px;height:14px;flex-shrink:0;margin-top:1px;color:#D84315" aria-hidden="true"></i>
+            <span><strong>For placement emergencies,</strong> please call us directly at <a href="tel:+12818093653" style="font-weight:700;color:#7A4800">(281) 809-3653</a>. Do not rely solely on this form for urgent situations.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================
+     FOOTER
+=========================== -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-logo">
+          <div class="footer-brand-logo-mark" aria-hidden="true">C</div>
+          <div class="footer-brand-name">Care Option RTC</div>
+        </div>
+        <p class="footer-tagline">A warm, home-like residential treatment center for boys ages 8–15 in Houston, Texas. Where healing, school, and childhood happen together.</p>
+        <div class="footer-license-badge" role="status" aria-label="Licensed in Texas">
+          <i data-lucide="shield-check" style="width:13px;height:13px" aria-hidden="true"></i>
+          Licensed in Texas
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#pillars">About Us</a></li>
+          <li><a href="#why">Why Care Option</a></li>
+          <li><a href="#services">Daily Life</a></li>
+          <li><a href="#admission">Admission Process</a></li>
+          <li><a href="#team">Our Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">Residential Care</a></li>
+          <li><a href="#services">Medication Administration</a></li>
+          <li><a href="#services">Education Continuity</a></li>
+          <li><a href="#services">Normalcy Activities</a></li>
+          <li><a href="#admission">Referral Process</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <div class="footer-contact-item">
+          <i data-lucide="phone" class="footer-contact-icon" style="width:15px;height:15px" aria-hidden="true"></i>
+          <a href="tel:+12818093653">(281) 809-3653</a>
+        </div>
+        <div class="footer-contact-item">
+          <i data-lucide="mail" class="footer-contact-icon" style="width:15px;height:15px" aria-hidden="true"></i>
+          <a href="mailto:careoptionrtc@gmail.com">careoptionrtc@gmail.com</a>
+        </div>
+        <div class="footer-contact-item">
+          <i data-lucide="map-pin" class="footer-contact-icon" style="width:15px;height:15px" aria-hidden="true"></i>
+          <span>Houston, TX</span>
+        </div>
+        <div class="footer-contact-item">
+          <i data-lucide="clock" class="footer-contact-icon" style="width:15px;height:15px" aria-hidden="true"></i>
+          <span>Mon–Fri: 10AM–5PM<br>Placement: Mon–Sat 8AM–6PM</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; <span id="footer-year"></span> Care Option Residential Treatment Center. All rights reserved.</span>
+      <span style="font-size:0.8rem">Margaret Nwajiaku, Founder &amp; Director | Houston, Texas</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===========================
+     JAVASCRIPT
+=========================== -->
+<script>
+// Lucide icons — init before GSAP
+try { lucide.createIcons(); } catch(e) { console.warn('Lucide:', e); }
+
+// Footer year
+document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+// Nav scroll effect
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 48);
+}, { passive: true });
+
+// Hamburger / mobile menu
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const mobileClose = document.getElementById('mobile-close');
+
+function openMenu() {
+  mobileMenu.classList.add('open');
+  mobileMenu.style.display = 'flex';
+  hamburgerBtn.setAttribute('aria-expanded', 'true');
+  document.body.style.overflow = 'hidden';
+}
+function closeMenu() {
+  mobileMenu.classList.remove('open');
+  hamburgerBtn.setAttribute('aria-expanded', 'false');
+  setTimeout(() => { mobileMenu.style.display = ''; }, 350);
+  document.body.style.overflow = '';
+}
+
+hamburgerBtn.addEventListener('click', openMenu);
+mobileClose.addEventListener('click', closeMenu);
+mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+
+// ============================================
+// SCROLL ANIMATIONS — Intersection Observer (no GSAP dependency)
+// ============================================
+const animObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in-view');
+      animObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+
+document.querySelectorAll('.reveal, .pillar-card, .timeline-item, .step-card, .team-card, .why-stat, .stat-card, .testimonial-card').forEach(el => {
+  animObserver.observe(el);
+});
+
+// Hero entrance via CSS @keyframes (see style block)
+
+// Stagger children in grids
+document.querySelectorAll('.pillars-grid, .steps-grid, .team-grid, .why-stats').forEach(grid => {
+  Array.from(grid.children).forEach((child, i) => {
+    child.style.transitionDelay = (i * 0.12) + 's';
+  });
+});
+
+// Animated counters (vanilla JS)
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      const target = parseInt(el.dataset.count);
+      const suffix = el.dataset.suffix || '';
+      let current = 0;
+      const step = Math.ceil(target / 40);
+      const timer = setInterval(() => {
+        current += step;
+        if (current >= target) { current = target; clearInterval(timer); }
+        el.textContent = current + suffix;
+      }, 30);
+      counterObserver.unobserve(el);
+    }
+  });
+}, { threshold: 0.3 });
+
+document.querySelectorAll('[data-count]').forEach(el => counterObserver.observe(el));
+
+// Testimonial carousel — horizontal scroll only, NEVER moves the page
+function scrollTestimonial(idx) {
+  const grid = document.querySelector('.testimonials-grid');
+  const cards = grid.querySelectorAll('.testimonial-card');
+  if (cards[idx] && grid) {
+    const cardLeft = cards[idx].offsetLeft - grid.offsetLeft;
+    const centerOffset = (grid.clientWidth - cards[idx].clientWidth) / 2;
+    grid.scrollTo({ left: cardLeft - centerOffset, behavior: 'smooth' });
+    document.querySelectorAll('.testimonial-dot').forEach((d, i) => {
+      d.classList.toggle('active', i === idx);
+    });
+  }
+}
+// Auto-scroll testimonials every 5s
+let currentTestimonial = 0;
+let testimonialInterval = setInterval(() => {
+  currentTestimonial = (currentTestimonial + 1) % 5;
+  scrollTestimonial(currentTestimonial);
+}, 5000);
+// Pause auto-scroll on hover
+const tGrid = document.querySelector('.testimonials-grid');
+if (tGrid) {
+  tGrid.addEventListener('mouseenter', () => clearInterval(testimonialInterval));
+  tGrid.addEventListener('mouseleave', () => {
+    testimonialInterval = setInterval(() => {
+      currentTestimonial = (currentTestimonial + 1) % 5;
+      scrollTestimonial(currentTestimonial);
+    }, 5000);
+  });
+}
+
+// Contact form submit handler
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const btn = document.getElementById('form-submit-btn');
+  btn.innerHTML = '<i data-lucide="check-circle" style="width:16px;height:16px"></i> Message Sent — We\'ll Be in Touch Soon';
+  btn.style.background = 'var(--secondary)';
+  btn.disabled = true;
+  lucide.createIcons();
+});
+</script>
+
+</body>
+</html>
